@@ -1,0 +1,319 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNiYkh0NAReGCYZ/MqxQ31d",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/GuiNunes477/Etec2026/blob/main/programa\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Aula de programação e Algoritmo\n",
+        "*Introdução"
+      ],
+      "metadata": {
+        "id": "DNLCY3fsq2YH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# tipos númericos\n",
+        "idade = 15 #int\n",
+        "altura = 1.68 #float\n",
+        "nc = 2 + 3j #complex\n",
+        "\n",
+        "# Tipo de texto\n",
+        "nome = \"Guilherme\" # str\n",
+        "\n",
+        "# Tipo booleano\n",
+        "chuva = False # bool\n",
+        "\n",
+        "# Tipo lista(mutável)\n",
+        "num = [1, 2, 3, 4, 5,] # list\n",
+        "\n",
+        "# Tipo tuple(Imutável)\n",
+        "coordenadas = (10,20) # Tuple\n",
+        "\n",
+        "# tipo conjunto(Valores únicos)\n",
+        "vogais = {'a', 'e', 'i', 'o', 'u'} #set\n",
+        "\n",
+        "# tipo dicionario(chave valor)\n",
+        "pessoa = (\"nome\", \"carlos\", \"idade\", 30)\n",
+        "\n",
+        "print(f'nome:', nome, 'idade:', idade, 'altura:', altura)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mWUWXzg2p1wg",
+        "outputId": "c51f59c0-7152-416c-8c45-2834ec2b99d9"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nome: Guilherme idade: 15 altura: 1.68\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "id = int(input(\"Qual a sua idade? \"))\n",
+        "alt = float(input(\"Qual a sua altura? \"))\n",
+        "nm = input(\"Qual o seu nome? \")\n",
+        "es = input(\"Estuda? \")\n",
+        "if(id <= 17):\n",
+        "  print(\"Tá novo ainda\")\n",
+        "else:\n",
+        "  print(\"Idoso\")\n",
+        "if(alt >= 1.60):\n",
+        "  print(\"Altura aceitavel\")\n",
+        "else:\n",
+        "  print(\"Baixinho\")\n",
+        "if nm == \"kenzo\":\n",
+        "  print(\"kenzo você é gay seu beta\")\n",
+        "else:\n",
+        "  print(\"\")\n",
+        "if(es == \"sim\"):\n",
+        " input(\"Em qual escola? \")\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Zs8cCi1p1cEi",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9ad9d29e-3b36-4b05-cc02-da9140feff67"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Qual a sua idade? 15\n",
+            "Qual a sua altura? 2\n",
+            "Qual o seu nome? 2\n",
+            "Estuda? 3\n",
+            "Tá novo ainda\n",
+            "Altura aceitavel\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Aula de Programação e algoritimo\n",
+        "\n",
+        "\n",
+        "*   Calcular a área\n",
+        "#Entrada\n",
+        "\n",
+        "ler lado1\n",
+        "ler lado2\n",
+        "\n",
+        "#processamento\n",
+        "\n",
+        "area = (lado1 * lado2)\n",
+        "\n",
+        "#Saída\n",
+        "\n",
+        "escrever o total da área\n"
+      ],
+      "metadata": {
+        "id": "Ud16u1HOth_V"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lado1 = float(input(\"Qual o primeiro lado do quadrado? \"))\n",
+        "lado2 = float(input(\"Qual o segundo lado do quadrado? \"))\n",
+        "area = (lado1 * lado2)\n",
+        "print(f\"A área do seu quadrado é: {area} metros quadrados\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tZ7BA9Ryt0U7",
+        "outputId": "a4ca7a20-8e39-41c6-ca1c-2d1603d86704"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Qual o primeiro lado do quadrado? 2\n",
+            "Qual o segundo lado do quadrado? 8\n",
+            "A área do seu quadrado é: 16.0 metros quadrados\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Operadores aritiméticos:\n",
+        "\n",
+        "*   Soma = +\n",
+        "*   subtração = -\n",
+        "*   multiplicação = *\n",
+        "*   divisão = /\n",
+        "\n",
+        "\n",
+        "Atividade: Fazer um algoritmo que depois recebe 4 notas do aluno e calcula a média aritimética e imprime a média\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "TYXt1Gsl0Agg"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Algoritimo\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "*   ler nota1\n",
+        "*   ler nota2\n",
+        "*   ler nota3\n",
+        "*   ler nota4\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "TU3jUP266COR"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Entrada\n",
+        "nota1 = float(input(\"Qual a primeira nota? \"))\n",
+        "nota2 = float(input(\"Qual a segunda nota? \"))\n",
+        "nota3 = float(input(\"Qual a terceira nota? \"))\n",
+        "nota4 = float(input(\"Qual a quarta nota? \"))\n",
+        "#Processamento\n",
+        "media = ((nota1 + nota2 + nota3 + nota4)/ 4)\n",
+        "#Saída\n",
+        "if(media >= 6):\n",
+        "  print(\"Parabéns Você passou sua média é\", round(media,2))\n",
+        "elif(media >= 5):\n",
+        "  print(\"Passou por pouco, se esforçe mais sua média foi\", round(media,2))\n",
+        "else:\n",
+        "  print(\"Você reprovou volte ano que vem sua média é\", round(media,2))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "anJsUZF71Gw1",
+        "outputId": "8b74f0f7-362b-44c9-a23d-774e1c683a15"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Qual a primeira nota? 5\n",
+            "Qual a segunda nota? 5\n",
+            "Qual a terceira nota? 6\n",
+            "Qual a quarta nota? 8\n",
+            "Parabéns Você passou sua média é 6.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Faça um algoritmo que receba um número e mostre o dobro desse número"
+      ],
+      "metadata": {
+        "id": "yPn82heV8_hL"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Entrada\n",
+        "insira um número\n",
+        "\n",
+        "#Processamento\n",
+        "Multiplique o número\n",
+        "\n",
+        "#Saída\n",
+        "mostre o dobro do número inicial"
+      ],
+      "metadata": {
+        "id": "xMN4oaxu92YT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#entrada\n",
+        "numero = float(input(\"Me fale um número \"))\n",
+        "#Processamento\n",
+        "dobro = numero*2\n",
+        "#saída\n",
+        "print(f\"O dobro de {numero} é {dobro}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VWTtR-469HzP",
+        "outputId": "2e2a0c4c-3e63-468b-e573-93cf8b3198e4"
+      },
+      "execution_count": 59,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Me fale um número 9.65\n",
+            "O dobro de 9.65 é 19.3\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
